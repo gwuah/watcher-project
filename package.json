@@ -1,0 +1,18 @@
+{
+  "name": "watcher",
+  "version": "1.0.0",
+  "description": "messenger bot that monitors stocks for you",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node init.js"
+  },
+  "author": "gwuah | quincy | edwin",
+  "license": "ISC",
+  "dependencies": {
+    "google-trends-api": "^4.7.0"
+  }
+}
