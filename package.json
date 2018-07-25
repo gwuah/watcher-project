@@ -13,6 +13,10 @@
   "author": "gwuah | quincy | edwin",
   "license": "ISC",
   "dependencies": {
-    "google-trends-api": "^4.7.0"
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "google-trends-api": "^4.7.0",
+    "mongoose": "^5.2.5"
   }
 }
