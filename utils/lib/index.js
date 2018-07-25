@@ -13,8 +13,9 @@ async function checkPattern({ interest, startTime, endTime, geo}) {
 
   try {
     const res = await googleTrends.interestOverTime(query);
-    const lengthOfTimeline = res.default.timelineData.length;
-    console.log(res.default.timelineData[lengthOfTimeline-1]);
+    console.log(res)
+    // const lengthOfTimeline = res.default.timelineData.length;
+    // console.log(res.default.timelineData[lengthOfTimeline-1]);
 
     // return latest data set
     return res.default.timelineData[lengthOfTimeline-1]
@@ -23,6 +24,10 @@ async function checkPattern({ interest, startTime, endTime, geo}) {
   }
 
 }
+
+checkPattern({
+	interest: "macbook"
+})
 
 module.exports = {
   checkPattern
