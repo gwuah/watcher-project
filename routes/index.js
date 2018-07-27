@@ -1,29 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
+const appController = require('../controllers/appController');
 
-router.post('/now', (req, res) => {
-  // duration
-  // interest
-  // region
-
-  // interest over region
-});
-
-router.post('/register-via-email', userController.registerUser)
-
-router.get('/ibr', (req, res) => {
-  // interest over region
-});
-
-router.get('/iot', (req, res) => {
-  // interest over region
-});
-
-router.get('/rq', (req, res) => {
-  // interest over region
-});
-
-
+router.post('/register-via-email', userController.registerUser);
+router.post('/interest-over-time', appController.getInterestOverTime);
+// router.post('/interest-over-region', appController.getInterestByRegion);
 
 module.exports = router;

@@ -1,3 +1,9 @@
-import trendy from './lib/index';
+const trendy = require('./index');
 
-console.log(trendy)
+// trendy.checkInterestByRegion({
+//   interest: 'macbook',
+// })
+
+trendy.checkInterestOverTime({
+  interest: 'macbook',
+})
