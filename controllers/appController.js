@@ -61,7 +61,8 @@ exports.getInterestOverTime = async (req, res) => {
 
   try {
     const dataset = await utils.checkInterestOverTime({
-      interest: req.body.interest
+      interest: req.body.interest,
+      startTime: req.body.startTime
     });
     return res.status(200).json({
       status: true,
